@@ -1,0 +1,30 @@
+<div>
+    <h1>{{user.name}}</h1>
+    <h3>{{user.title}}</h3>
+    <p>{{user.address}}</p>
+    <div>
+        <p>phone</p>
+        <p *ngFor="let PhoneNumber of user.phone">{{PhoneNumber}}</p>
+        
+
+    </div>
+</div>
+<div>
+    <h1>conditons in angular</h1>
+<!--    <h1 *ngIf="show=='yes';then ifBlock else elseBlock"></h1>
+    <ng-template #ifBlock>
+        <h1>if block</h1>
+    </ng-template>
+    <ng-template #elseBlock>
+        <h1>else block</h1>
+    </ng-template> -->
+<ng-template [ngIf]="show=='red'">
+    <h1>red block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='green'">
+    <h1>green block</h1>
+</ng-template>
+<ng-template [ngIf]="show=='blue'">
+    <h1>blue block</h1>
+</ng-template>
+</div>

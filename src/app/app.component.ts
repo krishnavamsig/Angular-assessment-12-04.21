@@ -11,9 +11,10 @@ export class AppComponent {
   public name="Angular"
   public topic = "Data Binding"
   public image="/assets/images/download.jpg"
+  public value=""
   onclick()
   {
     console.log("Thank you for subscribing")
   }
-  
+
 }

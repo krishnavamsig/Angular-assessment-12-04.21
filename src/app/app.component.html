@@ -331,11 +331,16 @@
 
 <div class="content" role="main">
   <app-helloworld></app-helloworld>
+  <app-address-card></app-address-card>
   <h1>welcome to {{name}}</h1>
   <h2 style="text-align: center;">Welcome to the {{topic}} tutorial</h2>
   <img [src]="image" alt="" style="height: 100px; width: 250px" class="center"> 
   <br>
-  <button (click)="onclick()">subscribe to angular </button>
+  <div style="text-align: center;"><button (click)="onclick()">subscribe to angular </button><br><br>
+  <input [(ngModel)]="value" type="text"><br><br>
+  {{value}}
+</div>
+  
   
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
